@@ -96,7 +96,7 @@ export const getCurrentUser = async () => {
     if (user.total === 0) return null;
     return parseStringify(user.documents[0]);
   } catch (error) {
-    handleError(error, "Unable to find user");
+    console.log(error);
   }
 };
 
